@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joyería B</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            background-color: white;
+            color:#382f32;
+        }
+        header{
+            background-color: #382f32;
+            color: white;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+        }
+        ul{
+            list-style: none;
+        }
+        li a{
+            text-decoration: none;
+            background-color: #382f32;
+            color: white;
+            display: block;
+            padding: 15px 20px;
+            width: 250px;
+            text-align: center;
+        }
+        li a.active{
+            background-color: white;
+            color:#382f32;
+            width: 100%;
+            width: 250px;
+            text-align: center;
+        }
+        .menu-hamburguesa{
+            background-color: #382f32;
+            color: white;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 250px;
+            z-index: 999;
+        }
+        .boton{
+            border: none;
+            background-color: #382f32;
+            color: white;
+            font-size: 50px;
+            cursor: pointer;
+            width: 50px;
+            z-index: 1000;
+            top: 0;
+            right: 0;
+            position:fixed;
+            display: block;
+        }
+        .menu-hamburguesa.active{
+            transform: translateX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-hamburguesa li a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Joyería B</h1>
+        <div class="boton" id="boton-menu">☰</div>
+    </header>
+    <div class="menu-hamburguesa" id="menu-hamburguesa">
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="cuenta.html">Cuenta</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuBtn = document.getElementById('boton-menu')
+        const menu = document.getElementById('menu-hamburguesa')
+        menuBtn.addEventListener('click', () =>{
+            menu.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
