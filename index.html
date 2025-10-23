@@ -2,39 +2,49 @@
 <html>
 <head>
     <title>Joyería B</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap">
     <style>
         *{
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family:  'Cormorant Garamond', serif ;
+            font-weight: bold;
         }
         body{
             background-color: white;
             color:#382f32;
+            padding: 0;
         }
         header{
             background-color: #382f32;
             color: white;
             padding: 20px;
-            position: absolute;
+            position: fixed;
             width: 100%;
+            top: 0;
+            left: 0;
         }
         ul{
             list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
         }
-        li a{
+        ul li a{
             text-decoration: none;
             background-color: #382f32;
             color: white;
             display: block;
             padding: 15px 20px;
-            width: 250px;
+            width: 100%;
             text-align: center;
+            box-sizing: border-box;
         }
-        li a.active{
-            background-color: white;
+        ul li a.active{
+            background-color: #cb8933;
             color:#382f32;
             width: 100%;
-            width: 250px;
+            width: 100%;
             text-align: center;
         }
         .menu-hamburguesa{
@@ -43,10 +53,10 @@
             transform: translateX(100%);
             transition: transform 0.3s ease-in-out;
             position: fixed;
-            top: 0;
+            top: 75px;
             right: 0;
             height: 100%;
-            width: 250px;
+            width: 230px;
             z-index: 999;
         }
         .boton{
@@ -67,13 +77,47 @@
             transition: transform 0.3s ease-in-out;
         }
         .menu-hamburguesa li a:hover {
-            background-color: #555;
+            background-color: #feeb9e;
+            color: #382f32;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .contenedor{
+            margin-top: 75px;
+            padding: 20px;
+        }
+        .contenedor p{
+            font-size: 20px;
+            justify-content: left;
+        }
+        .contenedor h2{
+            font-size: 30px;
+        }
+        .contenedor img{
+            display: block;
+            margin: auto;
+        }
+        footer{
+            width: 100%;
+            background-color: #382f32;
+            color: white;
+            bottom: 0;
+            position: fixed;
+            text-align: center;
+            height: 50px;
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Joyería B</h1>
+        <div class="logo">
+            <i class="fa-regular fa-gem fa-2x" style="color:#cb8933"></i>
+            <h1>Joyería B</h1>
+        </div>
         <div class="boton" id="boton-menu">☰</div>
     </header>
     <div class="menu-hamburguesa" id="menu-hamburguesa">
@@ -84,6 +128,16 @@
             <li><a href="cuenta.html">Cuenta</a></li>
         </ul>
     </div>
+    <div class="contenedor">
+        <h2>Nuestro Legado</h2>
+        <p>Joyería B es una de las joyerías mexicanas más reconocidas por su calidad y tradición. Con más de 30 años siendo una de las principales joyerías en México, Joyería B se ha consolidado como referente en calidad y tradición, nos hemos destacado por ofrecer piezas únicas, elaboradas con los más altos estándares de excelencia y un compromiso inquebrantable con nuestros clientes.</p>
+        <h2>Innovación & Tradición</h2>
+        <p>Pero esta innovación no se aleja de la tradición. Villegas cuenta que en sus fábricas es posible encontrar a tres generaciones de una familia de orfebres (abuelo, padre e hijo) trabajando juntas, transmitiendo todos los conocimientos del pasado y del presente para la creación de joyas, ejemplo de ello son piezas únicas como la cadena de oro blanco con diamantes, que reflejan la innovación sin perder la esencia de la tradición.</p>
+        <img src="Sobre_Nosotros_02_1000x.webp" alt="Tradicion" height="300px" >
+    </div>
+    <footer>
+        <h2>García Vázquez Rafael Eliseo 5ºJ</h2>
+    </footer>
     <script>
         const menuBtn = document.getElementById('boton-menu')
         const menu = document.getElementById('menu-hamburguesa')
