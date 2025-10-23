@@ -88,6 +88,9 @@
         .contenedor{
             margin-top: 75px;
             padding: 20px;
+            flex: column;
+            display: flex;
+            gap: 20px;
         }
         .contenedor p{
             font-size: 20px;
@@ -99,6 +102,8 @@
         .contenedor img{
             display: block;
             margin: auto;
+            border-radius: 5%;
+            height: 250px;
         }
         footer{
             width: 100%;
@@ -130,15 +135,15 @@
             <i class="fa-regular fa-gem fa-2x" style="color:#cb8933"></i>
             <h1>Joyería B</h1>
         </div>
-        <div class="compra"><i class="fa-regular fa-bag-shopping fa-2x"></i></div>
+        <div class="compra"><i class="fa-chisel fa-regular fa-bag-shopping"></i></div>
         <div class="boton" id="boton-menu">☰</div>
     </header>
     <div class="menu-hamburguesa" id="menu-hamburguesa">
         <ul>
-            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="anillos.html">Anillos</a></li>
             <li><a href="collares.html">Collares</a></li>
-            <li><a href="colgantes.html">Colgantes</a></li>
+            <li><a href="colgantes.html" class="active">Colgantes</a></li>
             <li><a href="pendientes.html">Pendientes</a></li>
             <li><a href="pulsera_brazaletes.html">Pulseras & Brazalete</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -146,11 +151,9 @@
         </ul>
     </div>
     <div class="contenedor">
-        <h2>Nuestro Legado</h2>
-        <p>Joyería B es una de las joyerías mexicanas más reconocidas por su calidad y tradición. Con más de 30 años siendo una de las principales joyerías en México, Joyería B se ha consolidado como referente en calidad y tradición, nos hemos destacado por ofrecer piezas únicas, elaboradas con los más altos estándares de excelencia y un compromiso inquebrantable con nuestros clientes.</p>
-        <h2>Innovación & Tradición</h2>
-        <p>Pero esta innovación no se aleja de la tradición. Villegas cuenta que en sus fábricas es posible encontrar a tres generaciones de una familia de orfebres (abuelo, padre e hijo) trabajando juntas, transmitiendo todos los conocimientos del pasado y del presente para la creación de joyas, ejemplo de ello son piezas únicas como la cadena de oro blanco con diamantes, que reflejan la innovación sin perder la esencia de la tradición.</p>
-        <img src="Sobre_Nosotros_02_1000x.webp" alt="Tradicion" height="300px" >
+        <div class="producto"><a href="d_colgante1.html"><img src="colgante1.webp" alt="colgante 1"></a><h3>Titanic Zafiro azul <br>Oro Blanco 14K</h3></div>
+        <div class="producto"><a href="d_colgante2.html"><img src="colgante2.webp" alt="colgante 2"></a><h3>Cruz Diamantes Baguette SVD 14K</h3></div>
+        <div class="producto"><a href="d_colgante3.html"><img src="colgante3.webp" alt="colgante 3"></a><h3>Huevo</h3></div>
     </div>
     <footer>
         <h2>García Vázquez Rafael Eliseo 5ºJ</h2>

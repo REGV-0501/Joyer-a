@@ -88,6 +88,9 @@
         .contenedor{
             margin-top: 75px;
             padding: 20px;
+            flex: column;
+            display: flex;
+            gap: 20px;
         }
         .contenedor p{
             font-size: 20px;
@@ -97,8 +100,10 @@
             font-size: 30px;
         }
         .contenedor img{
-            display: block;
+            display: flex;
             margin: auto;
+            border-radius: 5%;
+            height: 250px;
         }
         footer{
             width: 100%;
@@ -135,8 +140,8 @@
     </header>
     <div class="menu-hamburguesa" id="menu-hamburguesa">
         <ul>
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="anillos.html">Anillos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="anillos.html" class="active">Anillos</a></li>
             <li><a href="collares.html">Collares</a></li>
             <li><a href="colgantes.html">Colgantes</a></li>
             <li><a href="pendientes.html">Pendientes</a></li>
@@ -145,12 +150,11 @@
             <li><a href="cuenta.html">Cuenta</a></li>
         </ul>
     </div>
+    <h2>Anillos:</h2>
     <div class="contenedor">
-        <h2>Nuestro Legado</h2>
-        <p>Joyería B es una de las joyerías mexicanas más reconocidas por su calidad y tradición. Con más de 30 años siendo una de las principales joyerías en México, Joyería B se ha consolidado como referente en calidad y tradición, nos hemos destacado por ofrecer piezas únicas, elaboradas con los más altos estándares de excelencia y un compromiso inquebrantable con nuestros clientes.</p>
-        <h2>Innovación & Tradición</h2>
-        <p>Pero esta innovación no se aleja de la tradición. Villegas cuenta que en sus fábricas es posible encontrar a tres generaciones de una familia de orfebres (abuelo, padre e hijo) trabajando juntas, transmitiendo todos los conocimientos del pasado y del presente para la creación de joyas, ejemplo de ello son piezas únicas como la cadena de oro blanco con diamantes, que reflejan la innovación sin perder la esencia de la tradición.</p>
-        <img src="Sobre_Nosotros_02_1000x.webp" alt="Tradicion" height="300px" >
+        <div class="producto"><a href="d_anillo1.html"><img src="anillos1.webp" alt="anillo 1"></a><h3>Corazón Diamante Natural <br>Oro Blanco 14K.</h3></div>
+        <div class="producto"><a href="d_anillo2.html"><img src="anillos2.webp" alt="anillo 2"></a><h3>Oro Rosa 10K Diamante Baguette.</h3></div>
+        <div class="producto"><a href="d_anillo3.html"><img src="anillos3.webp" alt="anillo 3"></a><h3>Corazón Oro Amarillo 18K</h3></div>
     </div>
     <footer>
         <h2>García Vázquez Rafael Eliseo 5ºJ</h2>
